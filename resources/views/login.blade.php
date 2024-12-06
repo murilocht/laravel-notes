@@ -16,10 +16,10 @@
                             <form action="/loginSubmit" method="post" novalidate>
                                 @csrf
                                 <div class="mb-3">
-                                    <label for="text_username" class="form-label">Username</label>
-                                    <input type="email" class="form-control bg-dark text-info" name="text_username" value="{{ old('text_username') }}" required>
+                                    <label for="text_email" class="form-label">Email</label>
+                                    <input type="email" class="form-control bg-dark text-info" name="text_email" value="{{ old('text_email') }}" required>
                                     {{-- show error --}}
-                                    @error('text_username')
+                                    @error('text_email')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
